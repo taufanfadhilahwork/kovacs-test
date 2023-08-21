@@ -1,0 +1,871 @@
+{
+	"info": {
+		"_postman_id": "235672ec-c44b-44e2-b90e-12470beef2eb",
+		"name": "Kovacs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2240059"
+	},
+	"item": [
+		{
+			"name": "Save Application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "personal_title",
+							"value": "0",
+							"description": "Mr: 0 | Ms: 1 | Mrs: 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_surname",
+							"value": "Doe",
+							"type": "text"
+						},
+						{
+							"key": "personal_first_name",
+							"value": "John",
+							"type": "text"
+						},
+						{
+							"key": "personal_sa_citizen",
+							"value": "1",
+							"description": "0 | 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_id_number",
+							"value": "ABC-45612",
+							"type": "text"
+						},
+						{
+							"key": "personal_dob",
+							"value": "1997-01-25",
+							"description": "YYYY-MM-DD",
+							"type": "text"
+						},
+						{
+							"key": "personal_marital_status",
+							"value": "1",
+							"description": "Single: 0 | Married: 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_gender",
+							"value": "1",
+							"description": "Female: 0 | Male: 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_disability_status",
+							"value": "1",
+							"description": "0 | 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_disability_description",
+							"value": "Disability",
+							"description": "required if personal_disability_status = 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_room_preference",
+							"value": "0",
+							"description": "Single room shared en suite: 0\nSingle room communal bathroom: 1\nDouble room shared en suite: 2\nDisable room en suite: 3\nCorner room shared en suite: 4",
+							"type": "text"
+						},
+						{
+							"key": "personal_application_year",
+							"value": "2023",
+							"description": "YYYY",
+							"type": "text"
+						},
+						{
+							"key": "personal_semester_year",
+							"value": "0",
+							"description": "Full year: 0\n1st Semester: 1\n2nd Semester: 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_kovacs_arrival_date",
+							"value": "2023-08-31",
+							"description": "YYYY-MM-DD",
+							"type": "text"
+						},
+						{
+							"key": "personal_home_street_address",
+							"value": "Sesame street",
+							"type": "text"
+						},
+						{
+							"key": "personal_home_province",
+							"value": "East Java",
+							"type": "text"
+						},
+						{
+							"key": "personal_home_postal_code",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "personal_home_city",
+							"value": "Malang",
+							"type": "text"
+						},
+						{
+							"key": "personal_home_country",
+							"value": "Indonesia",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_street_choice",
+							"value": "0",
+							"description": "0 | 1",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_street_address",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_province",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_postal_code",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_city",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "personal_current_country",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_address_choice",
+							"value": "0",
+							"description": "Home address: 0\nCurrent residential address: 1\nOther: 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_street_address",
+							"value": "",
+							"description": "required if personal_legal_address_choice = 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_province",
+							"value": "",
+							"description": "required if personal_legal_address_choice = 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_postal_code",
+							"value": "",
+							"description": "required if personal_legal_address_choice = 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_city",
+							"value": "",
+							"description": "required if personal_legal_address_choice = 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_legal_country",
+							"value": "",
+							"description": "required if personal_legal_address_choice = 2",
+							"type": "text"
+						},
+						{
+							"key": "personal_applicant_telephone",
+							"value": "0123455",
+							"type": "text"
+						},
+						{
+							"key": "personal_applicant_mobile",
+							"value": "0123445",
+							"type": "text"
+						},
+						{
+							"key": "personal_applicant_email",
+							"value": "john@kovacs.test",
+							"type": "text"
+						},
+						{
+							"key": "personal_parent_telephone",
+							"value": "012345",
+							"type": "text"
+						},
+						{
+							"key": "personal_parent_mobile",
+							"value": "01234",
+							"type": "text"
+						},
+						{
+							"key": "personal_parent_email",
+							"value": "parent@kovacs.test",
+							"type": "text"
+						},
+						{
+							"key": "personal_kovacs_before",
+							"value": "1",
+							"description": "0 | 1",
+							"type": "text"
+						},
+						{
+							"key": "academic_uwc_student_number",
+							"value": "123ABC",
+							"type": "text"
+						},
+						{
+							"key": "confirm_kovacs_credit_eva",
+							"value": "1",
+							"description": "0 | 1",
+							"type": "text"
+						},
+						{
+							"key": "confirm_info_correct",
+							"value": "1",
+							"description": "0 | 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/application-form",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"application-form"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "error: validation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "personal_title",
+									"value": "0",
+									"description": "Mr: 0 | Ms: 1 | Mrs: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_surname",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "personal_first_name",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "personal_sa_citizen",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_id_number",
+									"value": "ABC-4561",
+									"type": "text"
+								},
+								{
+									"key": "personal_dob",
+									"value": "1997-01-25",
+									"description": "YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "personal_marital_status",
+									"value": "1",
+									"description": "Single: 0 | Married: 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_gender",
+									"value": "1",
+									"description": "Female: 0 | Male: 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_disability_status",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_disability_description",
+									"value": "Disability",
+									"description": "required if personal_disability_status = 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_room_preference",
+									"value": "0",
+									"description": "Single room shared en suite: 0\nSingle room communal bathroom: 1\nDouble room shared en suite: 2\nDisable room en suite: 3\nCorner room shared en suite: 4",
+									"type": "text"
+								},
+								{
+									"key": "personal_application_year",
+									"value": "2023",
+									"description": "YYYY",
+									"type": "text"
+								},
+								{
+									"key": "personal_semester_year",
+									"value": "0",
+									"description": "Full year: 0\n1st Semester: 1\n2nd Semester: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_kovacs_arrival_date",
+									"value": "2023-08-31",
+									"description": "YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_street_address",
+									"value": "Sesame street",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_province",
+									"value": "East Java",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_postal_code",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_city",
+									"value": "Malang",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_country",
+									"value": "Indonesia",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_street_choice",
+									"value": "0",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_street_address",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_province",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_postal_code",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_city",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_country",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_address_choice",
+									"value": "0",
+									"description": "Home address: 0\nCurrent residential address: 1\nOther: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_street_address",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_province",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_postal_code",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_city",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_country",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_telephone",
+									"value": "0123455",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_mobile",
+									"value": "0123445",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_email",
+									"value": "john@kovacs.test",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_telephone",
+									"value": "012345",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_mobile",
+									"value": "01234",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_email",
+									"value": "parent@kovacs.test",
+									"type": "text"
+								},
+								{
+									"key": "personal_kovacs_before",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "academic_uwc_student_number",
+									"value": "123ABC",
+									"type": "text"
+								},
+								{
+									"key": "confirm_kovacs_credit_eva",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "confirm_info_correct",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/application-form",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"application-form"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 11:10:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 11:10:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.26"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Validation errors\",\n    \"data\": {\n        \"personal_id_number\": [\n            \"The personal id number has already been taken.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "personal_title",
+									"value": "0",
+									"description": "Mr: 0 | Ms: 1 | Mrs: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_surname",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "personal_first_name",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "personal_sa_citizen",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_id_number",
+									"value": "ABC-45612",
+									"type": "text"
+								},
+								{
+									"key": "personal_dob",
+									"value": "1997-01-25",
+									"description": "YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "personal_marital_status",
+									"value": "1",
+									"description": "Single: 0 | Married: 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_gender",
+									"value": "1",
+									"description": "Female: 0 | Male: 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_disability_status",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_disability_description",
+									"value": "Disability",
+									"description": "required if personal_disability_status = 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_room_preference",
+									"value": "0",
+									"description": "Single room shared en suite: 0\nSingle room communal bathroom: 1\nDouble room shared en suite: 2\nDisable room en suite: 3\nCorner room shared en suite: 4",
+									"type": "text"
+								},
+								{
+									"key": "personal_application_year",
+									"value": "2023",
+									"description": "YYYY",
+									"type": "text"
+								},
+								{
+									"key": "personal_semester_year",
+									"value": "0",
+									"description": "Full year: 0\n1st Semester: 1\n2nd Semester: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_kovacs_arrival_date",
+									"value": "2023-08-31",
+									"description": "YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_street_address",
+									"value": "Sesame street",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_province",
+									"value": "East Java",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_postal_code",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_city",
+									"value": "Malang",
+									"type": "text"
+								},
+								{
+									"key": "personal_home_country",
+									"value": "Indonesia",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_street_choice",
+									"value": "0",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_street_address",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_province",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_postal_code",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_city",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_current_country",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_address_choice",
+									"value": "0",
+									"description": "Home address: 0\nCurrent residential address: 1\nOther: 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_street_address",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_province",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_postal_code",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_city",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_legal_country",
+									"value": "",
+									"description": "required if personal_legal_address_choice = 2",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_telephone",
+									"value": "0123455",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_mobile",
+									"value": "0123445",
+									"type": "text"
+								},
+								{
+									"key": "personal_applicant_email",
+									"value": "john@kovacs.test",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_telephone",
+									"value": "012345",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_mobile",
+									"value": "01234",
+									"type": "text"
+								},
+								{
+									"key": "personal_parent_email",
+									"value": "parent@kovacs.test",
+									"type": "text"
+								},
+								{
+									"key": "personal_kovacs_before",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "academic_uwc_student_number",
+									"value": "123ABC",
+									"type": "text"
+								},
+								{
+									"key": "confirm_kovacs_credit_eva",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								},
+								{
+									"key": "confirm_info_correct",
+									"value": "1",
+									"description": "0 | 1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/application-form",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"application-form"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 11:11:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 11:11:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.26"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "60"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Application form submitted successfully\",\n    \"data\": {\n        \"application_name\": \"John\",\n        \"application_surname\": \"Doe\",\n        \"application_student_number\": \"123ABC\",\n        \"application_gender\": \"1\",\n        \"application_uwc_study_programme\": \"\",\n        \"application_study_year\": 0,\n        \"application_occupation_period\": 0,\n        \"application_payment_type\": 0,\n        \"application_kovacs_before\": \"1\",\n        \"application_time_period\": 0,\n        \"application_overall_status\": 0,\n        \"application_student_phone\": \"0123445\",\n        \"application_student_email\": \"john@kovacs.test\",\n        \"application_payer_phone\": \"\",\n        \"application_payer_fax\": \"\",\n        \"application_payer_email\": \"\",\n        \"application_uwc_accepted\": 0,\n        \"application_bursary_value\": 0,\n        \"application_bursary_status\": 0,\n        \"application_bursary_docs_provided\": 0,\n        \"application_bursary_letter_provided\": 0,\n        \"application_bank_statement_provided\": 0,\n        \"application_proof_income_provided\": 0,\n        \"application_statement_account_provided\": 0,\n        \"application_letter_previous_landlord_provided\": 0,\n        \"application_visa_letter_provided\": 0,\n        \"application_medical_insurance_letter_provided\": 0,\n        \"application_lease_agreement_signed\": 0,\n        \"application_room_inventory_signed_received\": 0,\n        \"application_room_type\": 0,\n        \"application_room_number\": 0,\n        \"application_room_checkin_time\": \"2023-08-31\",\n        \"application_documentation_upload_path\": \"\",\n        \"application_workflow_status\": 0,\n        \"application_invoice_sent\": 0,\n        \"applicant_id\": 46122,\n        \"room_id\": 0,\n        \"application_room_checkout_time\": \"2023-08-18\",\n        \"application_room_checkout_form_provided\": 0,\n        \"application_history_notes\": \"\",\n        \"application_id\": 42233\n    }\n}"
+				}
+			]
+		}
+	]
+}
